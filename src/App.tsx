@@ -1,9 +1,11 @@
-import { Nav } from './components/Nav'
+import { Header } from './components/Header'
 import './global.css'
 
 function App() {
   return (
-    <Nav />
+    <>
+      <Header />
+    </>
   )
 }
 
