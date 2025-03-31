@@ -5,6 +5,16 @@ import { dev } from '../data/dev'
 import styles from './Header.module.css'
 
 export function Header() {
+  function handleCopyButton(event: React.MouseEvent<SVGSVGElement>) {
+    const span = event.currentTarget.closest('div')?.querySelector('span')
+
+    if (span) {
+      navigator.clipboard.writeText(span.innerText)
+        .then(() => alert(`Copied: ${span.innerText}`))
+        .catch((err) => console.error('Failed to copy: ', err))
+    } else console.warn('No text found to copy.')
+  }
+
   return (
     <div className={styles.header}>
       <header>
@@ -32,7 +42,7 @@ export function Header() {
           </div>
           <div>
             <span>{dev.email}</span>
-            <Copy />
+            <Copy onClick={handleCopyButton}/>
           </div>
         </div>
         <div className={styles.info}>
@@ -42,7 +52,7 @@ export function Header() {
           </div>
           <div>
             <span>{dev.number}</span>
-            <Copy />
+            <Copy onClick={handleCopyButton}/>
           </div>
         </div>
         <div className={styles.info}>
