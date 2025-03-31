@@ -1,8 +1,9 @@
+import { Nav } from './components/Nav'
 import './global.css'
 
 function App() {
   return (
-    <p>Hello World!</p>
+    <Nav />
   )
 }
 

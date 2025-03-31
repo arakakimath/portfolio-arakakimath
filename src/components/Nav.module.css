@@ -1,0 +1,19 @@
+.nav {
+  display: flex;
+  gap: 1rem;
+  justify-content: space-around;
+  max-width: var(--max-width);
+  margin-inline: auto;
+  border: 1px solid;
+  padding-block: 0.5rem;
+}
+
+.nav a {
+  text-decoration: none;
+  color: inherit;
+  transition: color 0.1s;
+}
+
+.nav a:hover {
+  color: green;
+}
