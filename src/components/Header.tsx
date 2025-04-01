@@ -1,4 +1,4 @@
-import { EnvelopeSimple, Copy, Phone, MapPin } from 'phosphor-react'
+import { EnvelopeSimple, Copy, Phone, MapPin, GithubLogo, LinkedinLogo } from 'phosphor-react'
 
 import { dev } from '../data/dev'
 
@@ -58,10 +58,28 @@ export function Header() {
         <div className={styles.info}>
           <div>
             <MapPin />
-            <strong>Location</strong>
+            <strong>Local</strong>
           </div>
           <div>
             <span>{dev.location}</span>
+          </div>
+        </div>
+        <div className={styles.info}>
+          <div>
+            <GithubLogo />
+            <strong>GitHub</strong>
+          </div>
+          <div>
+            <a href={dev.github}>@arakakimath ↗</a>
+          </div>
+        </div>
+        <div className={styles.info}>
+          <div>
+            <LinkedinLogo />
+            <strong>LinkedIn</strong>
+          </div>
+          <div>
+            <a href={dev.linkedin}>@arakakimath ↗</a>
           </div>
         </div>
       </footer>

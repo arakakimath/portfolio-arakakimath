@@ -1,0 +1,9 @@
+@media (width > 768px) {
+  .doubleColumn {
+    display: grid;
+    max-width: var(--max-width);
+    margin-inline: auto;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+}

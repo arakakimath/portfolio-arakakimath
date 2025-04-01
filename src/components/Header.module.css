@@ -1,7 +1,7 @@
 .header {
   max-width: var(--max-width);
   margin-inline: auto;
-  background-image: url(https://images.unsplash.com/photo-1742330425089-1f91d18eaa4e?q=80&w=960&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+  background-image: url(https://images.unsplash.com/photo-1742330425089-1f91d18eaa4e?q=80&w=1280&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
   background-position-y: 25%;
   background-color: rgba(0, 0, 0, 0.6); /* Dark overlay */
   background-blend-mode: multiply;
@@ -97,15 +97,26 @@
 
   > div:nth-child(1) {
     color: var(--gray-200);
+    align-items: center;
   }
 
   > div:nth-child(2) {
     font-size: 0.875rem;
+    align-items: center;
   }
 
   svg:hover {
     background-color: var(--gray-400);
     border-radius: 2px;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+      color: var(--green);
+    }
   }
 }
 
